@@ -14790,7 +14790,7 @@ var JqueryUiTheme_1 = __webpack_require__(214);
 var BootstrapTheme_1 = __webpack_require__(258);
 ThemeRegistry_1.defineThemeSystem('standard', StandardTheme_1.default);
 ThemeRegistry_1.defineThemeSystem('jquery-ui', JqueryUiTheme_1.default);
-ThemeRegistry_1.defineThemeSystem('bootstrap3', BootstrapTheme_1.default);
+ThemeRegistry_1.defineThemeSystem('bootstrap4', BootstrapTheme_1.default);
 
 
 /***/ }),
@@ -14809,7 +14809,7 @@ var BootstrapTheme = /** @class */ (function (_super) {
 }(Theme_1.default));
 exports.default = BootstrapTheme;
 BootstrapTheme.prototype.classes = {
-    widget: 'fc-bootstrap3',
+    widget: 'fc-bootstrap4',
     tableGrid: 'table-bordered',
     tableList: 'table table-striped',
     buttonGroup: 'btn-group',
@@ -14817,26 +14817,26 @@ BootstrapTheme.prototype.classes = {
     stateActive: 'active',
     stateDisabled: 'disabled',
     today: 'alert alert-info',
-    popover: 'panel panel-default',
-    popoverHeader: 'panel-heading',
-    popoverContent: 'panel-body',
+    popover: 'card',
+    popoverHeader: 'card-heading',
+    popoverContent: 'card-body',
     // day grid
-    headerRow: 'panel-default',
-    dayRow: 'panel-default',
+    headerRow: '',
+    dayRow: '',
     // list view
-    listView: 'panel panel-default'
+    listView: 'card'
 };
-BootstrapTheme.prototype.baseIconClass = 'glyphicon';
+BootstrapTheme.prototype.baseIconClass = 'fa';
 BootstrapTheme.prototype.iconClasses = {
-    close: 'glyphicon-remove',
-    prev: 'glyphicon-chevron-left',
-    next: 'glyphicon-chevron-right',
-    prevYear: 'glyphicon-backward',
-    nextYear: 'glyphicon-forward'
+    close: 'fa-times',
+    prev: 'fa-chevron-left',
+    next: 'fa-chevron-right',
+    prevYear: 'fa-backward',
+    nextYear: 'fa-forward'
 };
 BootstrapTheme.prototype.iconOverrideOption = 'bootstrapGlyphicons';
 BootstrapTheme.prototype.iconOverrideCustomButtonOption = 'bootstrapGlyphicon';
-BootstrapTheme.prototype.iconOverridePrefix = 'glyphicon-';
+BootstrapTheme.prototype.iconOverridePrefix = 'fa-';
 
 
 /***/ }),
