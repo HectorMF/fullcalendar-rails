@@ -14826,7 +14826,7 @@ BootstrapTheme.prototype.classes = {
     // list view
     listView: 'card'
 };
-BootstrapTheme.prototype.baseIconClass = 'fa';
+BootstrapTheme.prototype.baseIconClass = 'fa fa-fw';
 BootstrapTheme.prototype.iconClasses = {
     close: 'fa-times',
     prev: 'fa-chevron-left',
