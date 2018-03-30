@@ -14813,18 +14813,18 @@ BootstrapTheme.prototype.classes = {
     tableGrid: 'table-bordered',
     tableList: 'table table-striped',
     buttonGroup: 'btn-group',
-    button: 'btn btn-secondary',
+    button: 'btn btn-primary',
     stateActive: 'active',
     stateDisabled: 'disabled',
     today: 'alert alert-info',
     popover: 'card',
-    popoverHeader: 'card-heading',
-    popoverContent: 'card-body',
+    popoverHeader: 'card-header',
+    popoverContent: '',
     // day grid
     headerRow: '',
     dayRow: '',
     // list view
-    listView: 'card'
+    listView: ''
 };
 BootstrapTheme.prototype.baseIconClass = 'fa fa-fw';
 BootstrapTheme.prototype.iconClasses = {
