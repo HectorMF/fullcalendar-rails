@@ -14866,7 +14866,7 @@ var Bootstrap4Theme = /** @class */ (function (_super) {
 exports.default = Bootstrap4Theme;
 Bootstrap4Theme.prototype.classes = {
     widget: 'fc-bootstrap4',
-    tableGrid: 'table-bordered',
+    tableGrid: '',
     tableList: 'table',
     tableListHeading: 'table-active',
     buttonGroup: 'btn-group',
@@ -14880,8 +14880,8 @@ Bootstrap4Theme.prototype.classes = {
     // day grid
     // for left/right border color when border is inset from edges (all-day in agenda view)
     // avoid `table` class b/c don't want margins/padding/structure. only border color.
-    headerRow: 'table-bordered',
-    dayRow: 'table-bordered',
+    headerRow: '',
+    dayRow: '',
     // list view
     listView: 'card card-primary'
 };
