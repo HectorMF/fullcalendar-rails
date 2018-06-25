@@ -12384,10 +12384,10 @@ __webpack_require__(10);
 __webpack_require__(47);
 __webpack_require__(256);
 __webpack_require__(257);
-__webpack_require__(260);
 __webpack_require__(261);
 __webpack_require__(262);
 __webpack_require__(263);
+__webpack_require__(264);
 $.fullCalendar = exportHooks;
 $.fn.fullCalendar = function (options) {
     var args = Array.prototype.slice.call(arguments, 1); // for a possible method call
@@ -14794,11 +14794,12 @@ var StandardTheme_1 = __webpack_require__(213);
 var JqueryUiTheme_1 = __webpack_require__(214);
 var Bootstrap3Theme_1 = __webpack_require__(258);
 var Bootstrap4Theme_1 = __webpack_require__(259);
+var DigitalHospitalTheme_1 = __webpack_require__(260);
 ThemeRegistry_1.defineThemeSystem('standard', StandardTheme_1.default);
 ThemeRegistry_1.defineThemeSystem('jquery-ui', JqueryUiTheme_1.default);
 ThemeRegistry_1.defineThemeSystem('bootstrap3', Bootstrap3Theme_1.default);
 ThemeRegistry_1.defineThemeSystem('bootstrap4', Bootstrap4Theme_1.default);
-
+ThemeRegistry_1.defineThemeSystem('digitalhospital', DigitalHospitalTheme_1.default);
 
 /***/ }),
 /* 258 */
@@ -14866,7 +14867,7 @@ var Bootstrap4Theme = /** @class */ (function (_super) {
 exports.default = Bootstrap4Theme;
 Bootstrap4Theme.prototype.classes = {
     widget: 'fc-bootstrap4',
-    tableGrid: '',
+    tableGrid: 'table-bordered',
     tableList: 'table',
     tableListHeading: 'table-active',
     buttonGroup: 'btn-group',
@@ -14880,8 +14881,8 @@ Bootstrap4Theme.prototype.classes = {
     // day grid
     // for left/right border color when border is inset from edges (all-day in agenda view)
     // avoid `table` class b/c don't want margins/padding/structure. only border color.
-    headerRow: '',
-    dayRow: '',
+    headerRow: 'table-bordered',
+    dayRow: 'table-bordered',
     // list view
     listView: 'card card-primary'
 };
@@ -14900,6 +14901,55 @@ Bootstrap4Theme.prototype.iconOverridePrefix = 'fa-';
 
 /***/ }),
 /* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var tslib_1 = __webpack_require__(2);
+var Theme_1 = __webpack_require__(19);
+var DigitalHospitalTheme = /** @class */ (function (_super) {
+    tslib_1.__extends(DigitalHospitalTheme, _super);
+    function DigitalHospitalTheme() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return DigitalHospitalTheme;
+}(Theme_1.default));
+exports.default = DigitalHospitalTheme;
+DigitalHospitalTheme.prototype.classes = {
+    widget: 'fc-digitalhospital',
+    tableGrid: '',
+    tableList: 'table',
+    tableListHeading: 'table-active',
+    buttonGroup: 'btn-group',
+    button: 'btn btn-outline-default',
+    stateActive: 'active',
+    stateDisabled: 'disabled',
+    today: 'alert alert-info',
+    popover: 'card card-primary',
+    popoverHeader: 'card-header',
+    popoverContent: 'card-body',
+    // day grid
+    // for left/right border color when border is inset from edges (all-day in agenda view)
+    // avoid `table` class b/c don't want margins/padding/structure. only border color.
+    headerRow: '',
+    dayRow: '',
+    // list view
+    listView: ''
+};
+DigitalHospitalTheme.prototype.baseIconClass = 'fa';
+DigitalHospitalTheme.prototype.iconClasses = {
+    close: 'fa-times',
+    prev: 'fa-chevron-left',
+    next: 'fa-chevron-right',
+    prevYear: 'fa-angle-double-left',
+    nextYear: 'fa-angle-double-right'
+};
+DigitalHospitalTheme.prototype.iconOverrideOption = 'bootstrapFontAwesome';
+DigitalHospitalTheme.prototype.iconOverrideCustomButtonOption = 'bootstrapFontAwesome';
+DigitalHospitalTheme.prototype.iconOverridePrefix = 'fa-';
+
+
+/***/ }),
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -14927,7 +14977,7 @@ ViewRegistry_1.defineView('month', {
 
 
 /***/ }),
-/* 261 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -14952,7 +15002,7 @@ ViewRegistry_1.defineView('agendaWeek', {
 
 
 /***/ }),
-/* 262 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -14999,7 +15049,7 @@ ViewRegistry_1.defineView('listYear', {
 
 
 /***/ }),
-/* 263 */
+/* 264 */
 /***/ (function(module, exports) {
 
 Object.defineProperty(exports, "__esModule", { value: true });
