@@ -14915,25 +14915,31 @@ var DigitalHospitalTheme = /** @class */ (function (_super) {
 }(Theme_1.default));
 exports.default = DigitalHospitalTheme;
 DigitalHospitalTheme.prototype.classes = {
+
     widget: 'fc-digitalhospital',
-    tableGrid: '',
-    tableList: 'table',
-    tableListHeading: 'table-active',
+    widgetHeader: 'fc-widget-header',
+    widgetContent: 'fc-widget-content',
     buttonGroup: 'btn-group',
     button: 'btn btn-outline-default',
+    cornerLeft: 'fc-corner-left',
+    cornerRight: 'fc-corner-right',
+    stateDefault: 'fc-state-default',
     stateActive: 'active',
     stateDisabled: 'disabled',
+    stateHover: 'fc-state-hover',
+    stateDown: 'fc-state-down',
     today: 'alert alert-info',
     popover: 'card card-primary',
     popoverHeader: 'card-header',
     popoverContent: 'card-body',
     // day grid
-    // for left/right border color when border is inset from edges (all-day in agenda view)
-    // avoid `table` class b/c don't want margins/padding/structure. only border color.
-    headerRow: '',
-    dayRow: '',
+    headerRow: 'fc-widget-header',
+    dayRow: 'fc-widget-content',
     // list view
-    listView: ''
+    listView: 'fc-widget-content',
+    tableGrid: '',
+    tableList: 'table',
+    tableListHeading: 'table-active'
 };
 DigitalHospitalTheme.prototype.baseIconClass = 'fa';
 DigitalHospitalTheme.prototype.iconClasses = {
