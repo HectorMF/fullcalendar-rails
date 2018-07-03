@@ -14949,7 +14949,9 @@ DigitalHospitalTheme.prototype.iconClasses = {
     prevYear: 'fa-angle-double-left',
     nextYear: 'fa-angle-double-right',
     addShift: 'fa-plus',
-    removeShifts: 'fa-trash'
+    removeShifts: 'fa-trash',
+	selectAll: 'fa-check-square',
+	selectNone: 'fa-times-square'
 };
 DigitalHospitalTheme.prototype.iconOverrideOption = 'bootstrapFontAwesome';
 DigitalHospitalTheme.prototype.iconOverrideCustomButtonOption = 'bootstrapFontAwesome';
