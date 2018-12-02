@@ -14941,7 +14941,7 @@ DigitalHospitalTheme.prototype.classes = {
     tableList: 'table',
     tableListHeading: 'table-active'
 };
-DigitalHospitalTheme.prototype.baseIconClass = 'fa';
+DigitalHospitalTheme.prototype.baseIconClass = 'far fa-fw';
 DigitalHospitalTheme.prototype.iconClasses = {
     close: 'fa-times',
     prev: 'fa-chevron-left',
@@ -14950,8 +14950,8 @@ DigitalHospitalTheme.prototype.iconClasses = {
     nextYear: 'fa-angle-double-right',
     addShift: 'fa-plus',
     removeShifts: 'fa-trash',
-	selectAll: 'fa-check-square',
-	selectNone: 'fa-times-square'
+	selectAll: 'fa-check',
+	selectNone: 'fa-times'
 };
 DigitalHospitalTheme.prototype.iconOverrideOption = 'bootstrapFontAwesome';
 DigitalHospitalTheme.prototype.iconOverrideCustomButtonOption = 'bootstrapFontAwesome';
