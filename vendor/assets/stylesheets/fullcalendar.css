@@ -35,23 +35,25 @@ body .fc {
 --------------------------------------------------------------------------------------------------*/
 .fc button {
   /* force height to include the border and padding */
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  //-moz-box-sizing: border-box;
+  //-webkit-box-sizing: border-box;
+  //box-sizing: border-box;
   /* dimensions */
-  margin: 0;
-  height: 2.1em;
-  padding: 0 .6em;
+  //margin: 0;
+  //height: 2.1em;
+  //padding: 0 .6em;
   /* text & cursor */
-  font-size: 1em;
+  //font-size: 1em;
   /* normalize */
-  white-space: nowrap;
-  cursor: pointer; }
+  //white-space: nowrap;
+  //cursor: pointer; 
+  }
 
 /* Firefox has an annoying inner border */
 .fc button::-moz-focus-inner {
-  margin: 0;
-  padding: 0; }
+  //margin: 0;
+  //padding: 0;
+ }
 
 .fc-state-default {
   /* non-theme */
