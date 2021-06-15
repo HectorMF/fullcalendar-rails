@@ -14920,7 +14920,7 @@ DigitalHospitalTheme.prototype.classes = {
     widgetHeader: 'fc-widget-header',
     widgetContent: 'fc-widget-content',
     buttonGroup: 'btn-group',
-    button: 'btn btn-outline-default',
+    button: 'btn btn-default',
     cornerLeft: 'fc-corner-left',
     cornerRight: 'fc-corner-right',
     stateDefault: 'fc-state-default',
